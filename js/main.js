@@ -1,4 +1,4 @@
-function LoadImage(id, targetId) {
+function loadImage(id, targetId) {
   let el = document.getElementById(id);
   let targetEl = targetId ? document.getElementById(id) : el;
   let imageToLoad;
