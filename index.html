@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/minireset.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <script defer type="text/javascript" src="js/main.js"></script>
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"
@@ -18,10 +19,10 @@
     <title>Jonathon Day - Web Developer</title>
   </head>
   <body>
-    <div class="wallpaper"></div>
+    <div class="wallpaper" id="wallpaper" data-image="images/austria.jpg"></div>
     <div class="content">
       <aside class="side">
-        <figure class="picture">
+        <figure class="picture" id="picture">
           <div class="picture-shadow"></div>
           <img
             id="pictureImage"
@@ -72,5 +73,16 @@
         </div>
       </main>
     </div>
+
+    <noscript>
+      <style type="text/css">
+        .wallpaper {
+          animation-name: zoomOut;
+        }
+        .picture {
+          animation-name: dropIn;
+        }
+      </style>
+    </noscript>
   </body>
 </html>
